@@ -1,14 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: petstore
-  namespace: external-systems
-  description: Petstore
+  name: test-service
+  namespace: company
+  description: A service created to test backstage integrations.
 spec:
   type: service
-  lifecycle: experimental
-  owner: group:pet-managers
+  lifecycle: production
+  owner: group:test-team
   providesApis:
-    - petstore
-    - internal/streetlights
     - hello-world
